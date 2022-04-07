@@ -7,14 +7,14 @@ let quantity = 1
 const quantUp = document.querySelector("#quantity-up")
 const quantDown = document.querySelector("#quantity-down")
 
-quantUp.addEventListener('click', function() {
+quantUp.addEventListener('click', function(){
     quantity++
-    updateQuantity('Quantity: ${quantity}')
+    updateQuantity(`Quantity: ${quantity}`)
 }) 
 
-quantUp.addEventListener('click', function(e) {
+quantDown.addEventListener('click', function(){
     if (quantity > 0) {
         quantity --
     }
-    updateQuantity('Quantity: ${quantity}')
+    updateQuantity(`Quantity: ${quantity}`)
 })
